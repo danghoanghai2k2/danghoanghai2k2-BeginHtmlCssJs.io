@@ -1,0 +1,35 @@
+.boxed {
+   border: 1px solid #000;
+   /* color: teal; */
+   border-radius: 10px;
+   padding: 10px;
+}
+.p_one {
+   /* inherit là kết thừa lại các giá trị mà thuộc tính cha chứa nó */
+   border: inherit;
+   color: inherit;
+   border-radius: inherit;
+   padding: inherit;
+}
+.boxed_father {
+   /* nếu thằng cha không có thuộc tính thì lấy ngoài cha */
+   color: yellow;
+}
+#p_one {
+   /* thuộc tính này sẽ lấy theo trình duyệt mặc định  */
+   border: inherit;
+   color: initial;
+   border-radius: initial;
+   padding: inherit;
+}
+.boxed2 {
+   border: 1px solid #000;
+   color: red;
+   font-size: 20px;
+   padding: 20px;
+}
+.p_two {
+   /* thuộc tính unset để đặt lại giá trị mặc định của các thuộc tính  */
+   border: unset;
+   font-size: unset;
+}

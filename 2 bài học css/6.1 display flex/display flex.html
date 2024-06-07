@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="display flex.css" />
+      <title>Flex Box</title>
+   </head>
+   <body>
+      <h1>học về flex box</h1>
+      <pre>
+        flex-container :
+        + flex-direction: row chiều ngang or column chiều dọc
+
+        + align-items: stretch mặc định 
+            stretch độ cao của các khối con là bằng nhau (mặc định của flex)  
+            flex-end căn theo dòng cuối độ cao là khác nhau
+            flex-start căn theo dòng đầu độ cao là khác nhau
+            center căn theo chính giữa độ cao là khác nhau 
+
+        + justify-content: căn chỉnh phần tử con (NẾU LÀ ROW CĂN THEO NGANG, NẾU LÀ COLUMN CĂN THEO DỌC)
+            flex-start : căn theo trái (mặc định của flex)  
+            flex-end : căn theo phải
+            center : căn theo giữa 
+            space-evenly : căn điều nhau 
+            space-between : căn điều sát cuối đầu
+            space-around : căn điều 2 bên của thằng con 
+
+         + align-content: flex-start; NẾU LÀ ROW CĂN THEO DỌC, NẾU LÀ COLUMN CĂN THEO NGANG
+
+         + flex-wrap: wrap; cho phép xuống dòng khi bị tràn phản tử con
+            nowrap : không xuống hàng(mặc định của flex)  
+            wrap : xuống hàng
+         + gap : tạo ra margin các phần tử con 
+         + flex-flow là viết tắt của căn theo hàng cột và xuống dòng hay không 
+
+         flex-item :
+         + flex-grow : 
+            nếu 3 item con là flex-grow :1; thì 3 phần tử bằng nhau
+            nếu item 3 là 2 thì item thứ 3 là 2 còn item  và item 2 là 1
+        + flex-basic: 
+            để xét kích thước chiều rộng cho item con khi chưa sét 
+        + flex-shrink: 1; để không bị tràn item con ra ngoài flex-container    
+        + order :  là thay đổi thứ tự các item con 
+            item con nào sét order bé thì lên đầu
+        align-self:;  căn theo riêng biệt không theo thằng cha  
+      </pre>
+      <hr />
+      <div class="container">
+         <div class="box_item">item 1</div>
+         <div class="box_item">item 2</div>
+         <div class="box_item">item 3</div>
+         <div class="box_item">item 4</div>
+         <div class="box_item">item 4</div>
+         <div class="box_item">item 4</div>
+         <div class="box_item">item 4</div>
+      </div>
+      <div class="containner2">
+         <div class="item">item 1</div>
+         <div class="item">item 2</div>
+         <div class="item">item 3</div>
+         <div class="item">item 4</div>
+         <div class="item">item 5</div>
+      </div>
+   </body>
+</html>

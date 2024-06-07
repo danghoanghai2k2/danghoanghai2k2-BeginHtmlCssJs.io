@@ -1,0 +1,42 @@
+/* cách viết tắt 
+outline-width
+outline-style (required)
+outline-color
+outline: 5px solid red;
+ */
+.input-text-one {
+   /* kiểu viền ngoài 
+   dotted : dấu chấm  
+   dashed : nét đứt
+   double : có 2 dòng viền 
+   groove, ridge: viền có kẻ 3d
+   none : không có đường viền
+   hidden : ẩn đường viền*/
+   outline-style: double;
+   border: 4px solid red;
+   padding: 10px 20px;
+}
+.input-text-two {
+   outline-color: rgb(255, 234, 167);
+   outline-style: dashed;
+}
+.input-text-three {
+   /* outline-width:
+   cos thể truyền vào giá trị px 
+   thin : bé
+   medium : vừa
+   thick :lớn */
+   padding: 10px 20px;
+   outline-width: 10px;
+   outline-color: yellow;
+   outline-style: dotted;
+   border: 5px solid #000;
+}
+.input-text-four {
+   padding: 10px 20px;
+   outline-width: 10px;
+   outline-color: yellow;
+   outline-style: dotted;
+   border: 5px solid #000;
+   outline-offset: 10px;
+}

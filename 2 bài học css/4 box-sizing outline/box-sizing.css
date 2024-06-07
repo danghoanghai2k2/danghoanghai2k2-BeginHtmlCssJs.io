@@ -1,0 +1,24 @@
+.div_box{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    padding: 10px;
+    border: 5px solid black;
+    box-sizing: content-box;     /* tính từ cái khối nội dung tính ra  (mặc định của web)*/
+}
+#div_box{
+    box-sizing: border-box;
+    box-shadow:  0 0 12px 0 red;
+    /* width: fit-content; khối bằng chiều dài nội dung */
+}
+/* làm việc căn giữa với bảng :  */
+th, td{
+    display: table-cell; /* theo ô */
+    vertical-align:middle;/*căn giữa  theo ô */
+}
+.captainAmerician{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    box-shadow: 15px 15px 0px 0px yellow,30px 30px 0px 0px red,45px 45px 0px 0px orange;
+}

@@ -1,0 +1,92 @@
+/* ANIMATION : <TÊN KIỂU>
+ <THỜI GIAN CHẠY> giây
+ <SỐ LẦN CHẠY> infinite vô hạn, số 
+ <KIỂU CHẠY>
+ <THỜI GIAN DELAY KHI STARTS> giây
+ <KIỂU SAU KHI CHẠY XONG>
+  {
+    alternate-reverse
+    alternate : quay ngược lại,
+    forwards : trỏ về vị trí cuối,
+    backwards : trở vè vị trí đầu
+  }
+KIỀU VIẾT TẮT ANINMATION
+animation: name duration timing-function delay iteration-count direction fill-mode;
+
+KIỂU VIẾT ĐỦ ANIMATION
+   animation-name: spiner; TÊN KIỂU CHẠY
+   animation-duration: 1s; THỜI GIAN CHẠY
+   animation-timing-function: ease-in-out; KIỂU CHẠY
+   animation-delay: 0s; THỜI GIAN DELEY TRƯỚC CHẠY
+   animation-iteration-count: infinite; SỐ LẦN CHẠY
+   animation-direction: alternate; KIỂU SAU KHI CHẠY XONG
+   animation-fill-mode: backwards; CHẠY XONG VỀ VỊ TRÍ NÀO
+   */
+.ring {
+   width: 150px;
+   height: 150px;
+   box-sizing: border-box;
+   border-radius: 50%;
+   border: 5px solid red;
+   border-right: 5px solid transparent;
+   border-left: 5px solid transparent;
+   animation: sinpiner 1s infinite linear /* 2s */ backwards;
+}
+@keyframes sinpiner {
+   /* from : 
+    currnet : ban đầu
+    to : kết thúc */
+   to {
+      transform: rotate(360deg);
+   }
+}
+.ring_2,
+.ring_3 {
+   width: 150px;
+   height: 150px;
+   box-sizing: border-box;
+   border-radius: 50%;
+   background-color: aqua;
+   animation: opacitys 1s infinite ease-out alternate-reverse;
+}
+@keyframes opacitys {
+   to {
+      transform: scale(1.2);
+      opacity: 0.1;
+   }
+}
+.ring_3 {
+   animation: moves 1s infinite ease alternate-reverse;
+}
+@keyframes moves {
+   from {
+      transform: translateX(0%);
+   }
+   to {
+      transform: translateX(100%) scale(1.2);
+      opacity: 0.1;
+   }
+}
+#ring_4 {
+   border-radius: 0%;
+   animation: cutting 1s infinite linear alternate-reverse !important;
+}
+@keyframes cutting {
+   0% {
+      transform: skewX(-50deg);
+   }
+   50% {
+      transform: skewX(0deg);
+      transform: skewX(50deg);
+   }
+   100% {
+   }
+}
+#ring_5 {
+   animation: color 0.5s infinite linear alternate;
+}
+@keyframes color {
+   to {
+      color: brown;
+   }
+}

@@ -1,0 +1,32 @@
+* {
+   /* margin: 0; */
+   padding: 0;
+   border: 0;
+   box-sizing: border-box;
+}
+ol,
+ul {
+   list-style: none;
+}
+a {
+   text-decoration: none;
+}
+.overflow_vs {
+   width: 10rem;
+   height: 14rem;
+   border: 1px solid #000;
+   /* thuộc tính này sẽ để content tràn nếu khối không đủ */
+   overflow: visible;
+}
+.overflow_hidden {
+   /* thuộc tính này ẩn các content bị thừa đi  */
+   overflow: hidden;
+}
+.overflow_scroll {
+   /* thuộc tính này tạo nên thanh quận cho khối  */
+   overflow: scroll;
+}
+.overflow_auto {
+   /* thuộc tính này sẽ tự động sinh ra thanh cuận nếu content lớn hơn khối  */
+   overflow: auto;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="index.css" />
+   </head>
+   <body>
+      <div class="">
+         <h1>học về độ ưu tiên trong thẻ</h1>
+         <ol>
+            <li>inline 1000</li>
+            <li>id 100</li>
+            <li>class 10</li>
+            <li>tag 1</li>
+            <li>thẻ toàn code với thẻ thừa hưởng</li>
+         </ol>
+         <p class="h1_head" id="h1_head" style="color: brown">__>review vè độ ưu tiên trong thẻ</p>
+      </div>
+      <div class="block_father" id="block_father">
+         <h1>thuộc tính cha trỏ đến thuộc tính con</h1>
+         <ul class="ol_one">
+            <li class="li_one" id="li_one" style="color: cornflowerblue !important">
+               inline + important là ưu tiên nhất
+            </li>
+            <li class="li_two">!important ưu tiên thứ 2</li>
+            <li class="li_three">các thuộc tính cha > con là ưu tiên 3</li>
+            <li class="li_four">id ưu tiên thư 4</li>
+            <li class="li_five">class là độ ưu tiên thứ 5</li>
+            <li class="li_five">tag là độ ưu tên thứ 6</li>
+            <li class="li_five">tag toàn trang web là độ ưu tiên thấp nhất</li>
+         </ul>
+      </div>
+   </body>
+</html>

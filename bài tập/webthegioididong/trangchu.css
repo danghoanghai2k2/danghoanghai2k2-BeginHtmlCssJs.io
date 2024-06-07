@@ -1,0 +1,922 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+p{
+    margin: none;
+    padding: none;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul ,li,ol{
+    list-style: none;
+    padding-left: 0px;
+}
+/* THUỘC TÍNH CHUNG */
+.header{
+    width: 100%;
+}
+.header .w-100{
+    width: 89% !important;
+    margin: 0 auto;
+}
+.header .transision{
+    transition:  all 0s cubic-bezier(0.42, 0, 0, 3.62);;
+}
+.background-header{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 28%, rgba(157,1,1,1) 75%);
+}
+/* XONG PHẦN QUẢNG CÁO TRANG */
+.header-cha{
+    width: 100%;
+    background-color: #ffd400;
+    margin: 0% auto;
+}
+.header-cha .header-timkiem{
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    background-color: #ffd400;
+    margin: 0% auto;
+}
+.header-cha .header-timkiem .buttoms{
+    width: 10rem;
+    font-size: 11px;
+    height: 2.5rem;
+    color:black;
+}
+.modal-body .input-group{
+    position: relative;
+}
+.input-group .icontimkiem{
+    position: absolute;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 100;
+    z-index: 2;
+}
+.header-timkiem-con  input{
+    width: 22em;
+    padding: 10px;
+    outline: none;
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 14px;
+    height: 40px;
+    padding: 8px 8px 8px 13px;
+}
+.magin10{
+    margin: 0% 10px;
+}
+.header-timkiem-con{
+    position: relative;
+}
+.header-timkiem-con .icontimkiem{
+    position: absolute;
+    right: 0;
+    padding: 6px;
+    font-size: 18px;
+    border: none;
+    background-color: white;
+    border-radius: 4px;
+}
+.header-timkiem .lich-su-timkiem button{
+    background-color: #ffc107;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    /* width: 8rem; */
+    padding:10px;
+    font-size: 14px;
+}
+.header-timkiem .lich-su-timkiem2 button{
+    width: 5rem;
+    min-height: 2.5rem;
+    font-size: 13px;
+    background-color: #ffd400;
+    border: none;
+    border-right: 1px solid wheat;
+}
+.trochuotvao a button:hover{
+   font-weight: 700;
+}
+/* XONG PHẦN LÀM HEADER 1 */
+.header-main{
+    background-color: #ffd400;
+    padding: 0 0 10px;
+    width: 100%;
+}
+.header-main .header-main-con{
+    width: 90%;
+    max-width: 1310px;
+    margin: 0px auto;
+    /* padding: 0 10px; */
+}
+.header-main .header-main-con ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -10px 0;
+    padding-top: 10px;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+.header-main .header-main-con ul li{
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+}
+.header-main .header-main-con ul a{
+    color: #000;
+    font-size: 0;
+    line-height: 16px;
+}
+.header-main .header-main-con ul i{
+    margin-right: 5px;
+}
+.header-main .header-main-con ul i,.header-main .header-main-con ul span{
+    display: inline-block;
+    font-size: 14px;
+    vertical-align: middle;
+}
+.header-main .header-main-con ul i img{
+    height: 20px;
+    width: auto;
+    object-fit: cover;
+    vertical-align: middle;
+}
+.header-main .header-main-con ul li .menu-after::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 6px solid #333;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.header-main .header-main-con .menu-cap2{
+    display: none;
+    position: absolute;
+    background: #fff;
+    top: 45px;
+    width: 160px;
+    border-radius: 4px;
+    padding: 10px;
+    z-index: 10;
+    border: 1px solid rgb(201, 201, 201);
+    left: 0;
+}
+.header-main .header-main-con .menu-cap2 div{
+    margin: 0;
+    width: auto;
+    float: none;
+}
+.header-main .header-main-con .menu-cap2::before{
+    content: '';
+    width: 0;
+    height: 0;
+    font-size: 14px;
+    position: absolute;
+    bottom: 100%;
+    left: 40px;
+    border-bottom: 10px solid #fff;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom-color: #fff;
+} 
+.menu-cap2-grids222::before{
+   left: 45rem !important;
+}
+.header-main-con .menu-cap2 div a{
+    display: block;
+    padding: 10px 0px;
+    color: #000;
+    font-size: 15px;
+    position: relative;
+    /* background-color: #000; */
+}
+.header-main-con .menu-cap2-grids{
+    /* display: grid !important; */
+    width: 800px !important;
+    /* height: 100px !important; */
+    grid-auto-rows: minmax(min-content,max-content);
+    grid-template-rows: repeat(2,auto);
+    grid-template-columns: repeat(4,auto);
+}
+/* PHẦN DỊCH VỤ TIỆN ÍCH */
+.header-main-con .menu-cap2-grids222{
+    left: unset !important;
+    right: 0% !important;
+    grid-template-columns: repeat(3,auto);
+}
+.header-main-con .menu-cap2-grids .item-grids{
+    width: 100%;
+    margin-bottom: 10px;
+    display: block;
+    flex-direction: column;
+}
+.header-main-con .menu-cap2-grids .item-grids p{
+    margin: 0;
+    border-bottom: 1px solid rgb(211, 211, 211);
+    /* display: initial; */
+    display: inline;
+    padding: 5px 0px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.header-main-con .menu-cap2-grids .item-grids a{
+    padding: 7px 0px;
+}
+.header-main-con .menu-cap2-grids .item-grids a:hover {
+    font-weight: 700;
+}
+.header-main-con .menu-cap2 a:hover {
+    font-weight: 700;
+}
+.header-main .header-main-con ul li:hover .menu-cap2, .menu-cap2 div{
+    display: grid;
+}
+/* XONG PHẦN LÀM HEADER 2 */
+.big-banner{
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.big-banner a{
+    width: 100%;
+    /* min-width: 1920px; */
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.big-banner a img{
+    width: 100%;
+    min-height: 450px;
+    position: relative;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto
+}
+/* XONG BANER HÌNH ẢNH  */
+.main-containners{
+    width: 87%;
+    margin: auto;
+}
+.main-containners .block-chinh-flex{
+    display: flex !important;
+    width: 100% !important;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+    border-radius: 1rem;
+}
+.main-containners .block-chinh-flex div{
+    margin-left: 5px;
+}
+#margin-right{
+    margin-left: 0px;
+    margin-right: 5px;
+}
+.main-containners .block-chinh-flex div img,flex div a{
+    width: 100% !important;
+    border-radius: 1rem;
+}
+/* XONG CÁC KHỐI ẢNH DỊCH CHUYỂN */
+
+/* NÚT BUTTTOM DỊCH CHUYỂN */
+.buttom-dichchuyen{
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: rgba(0, 0, 0, 0.699);
+    box-shadow: 3px 4px 4px 0px black;
+    border-radius: 50%;
+}
+#buttom-dichchuyen{
+    box-shadow: -3px 4px 4px 0px black;
+}
+.buttom-dichchuyen .gennerra{
+    height:2.5rem;
+}
+.buttom-dichchuyen2{
+    height: 4rem !important;
+    border-radius: unset !important;
+    width: 2rem !important;
+}
+.buttom-dichchuyen2 .gennerra{
+    height:4rem !important ;
+}   
+/* HẾT NÚT BÚTTOM */
+.option-promo{
+    display: flex;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 12px;
+    position: relative;
+    z-index: 1;
+    padding-left: 0px;
+    margin: 2rem 0px;
+}
+.option-promo li{
+    display: inline-block;
+    vertical-align: middle;
+    width: 20%;
+    margin-right: 2%;
+    width: calc(100%/3 - 16px);
+    background-color: rgb(230, 228, 228);
+    border-radius: 12px;
+    padding: 15px 0;
+}
+.option-promo li img{
+    display: inline-block;
+    vertical-align: middle;
+    height: 70px;
+}
+.option-promo li span{
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    color: #222;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: left;
+    margin-left: 10px;
+    max-width: 65%;
+}
+/* XONG PHẦN optgroup */
+.bannertopzone-home{
+    display: block;
+    overflow: hidden;
+    margin: 15px auto;
+    width: 100%;
+}
+.bannertopzone-home img{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+/* XONG PHẦN BỨC TRANH TRƯỚC MAIN  */
+.main-containners .hotdeal{
+    background-color:#FFCC35; 
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+    height: auto;
+}
+.prd-promo .tamAnhbanner a, .prd-promo .tamAnhbanner img{
+    width: 100%;
+}
+#paddingKhong{
+    padding: 0px;
+}
+.main-containners .hotdeal .prd-promo{
+    margin-bottom: 30px;
+    padding-bottom: 1px;
+    border-radius: 14px;
+    display: block;
+    margin: 0 auto 10px;
+}
+.main-containners .hotdeal .prd-promo a,.main-containners .hotdeal .prd-promo img{
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+/* XONG PHẦN DANH MỤC SẢN PHẨM  */
+.main-containners .prd-promo{
+    margin-bottom: 30px;
+    width: 100%;
+    background-color: #FEBC04;
+    border-radius: 14px;
+    display: block;
+    padding:10px;
+}
+.main-containners .prd-promo p{
+    display: block;
+    overflow: hidden;
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 40px;
+    letter-spacing: 4px;
+    padding: 1.3rem;
+    text-align: center;
+    height: auto;
+}
+.main-containners .block-flex{
+    display: flex;
+}
+.main-containners .block-flex div{
+    margin: 0 5px;
+    border-radius: 14px;
+}
+.main-containners .block-flex #magin10{
+    margin: 0 20px;
+}
+.main-containners .block-flex div a img{
+    width: 100%;
+    border-radius: 14px;
+}
+/* XONG PHẦN KHỐI ẢNH SAU TUẦN LỄ */
+.list-produc .producs{
+    width: 236px;
+    background-color:white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 4px;
+    height: 440px;
+}
+.list-produc .producs a{
+    height: 100%;
+    display: block;
+}
+.block-producs-cha{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.list-produc .producs .items{
+    background: rgba(219, 219, 219, 0.692);
+    display: inline-block;
+    width: 70px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 3px;
+    color: #000;
+}
+.list-produc .producs .items-img{
+    height: 220px;
+    line-height: 220px;
+    overflow: hidden;
+}
+.list-produc .producs .items-img img{
+    margin: 0 auto;
+    height: 95%;
+    object-fit: contain;
+    width: 100%;
+}
+.list-produc .producs .result-label {
+    width: 60%;
+    /* height: 25px; */
+    border-radius: 50px;
+    background: linear-gradient(to right,#faab08,#d42611);
+    margin-top: 10px;
+    color: white;
+    font-size: 11px;
+}
+#result-label-xanh{
+    background: linear-gradient(to right,#3bacf0,#1b6dc1);
+}
+#result-label-red{
+    background: linear-gradient(to right,#ef3006,#c60004);
+    width: 65%;
+}   
+#result-label-piner{
+    background: linear-gradient(to right,#e91f63,#db2663);
+}
+.list-produc .producs .result-label img{
+    width: 20%;
+    height: 100%; 
+}.list-produc .producs .result-label span{
+    line-height: 0 !important;
+    font-size: 10px;
+}
+.list-produc .producs h3{
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: black;
+    margin: 8px 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.list-produc .producs p{
+    color: #000;
+    opacity: 0.5;
+    font-size: 14px;
+}
+.list-produc .producs strong{
+    color: #d0021c;
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+.list-produc .producs small{
+    color: #eb5757;
+    background: #fff0e9;
+    border-radius: 4px;
+    padding: 1px 2px 2px 2px;
+    margin-left: 7px;
+    font-size: 14px;
+}
+.list-produc .producs span b, span .fa-star{
+    color: #fb6e2e;
+    display: inline-block;
+    vertical-align: middle;
+}
+.seeall{
+    display: block;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 4px;
+    text-align: center;
+    padding: 12px;
+    color: #333;
+    margin: 15px auto 0px;
+    width: 370px;
+}
+/* KHI HOVER VÀO SẢN PHẨM ĐIỆN THOẠI */
+.producs:hover a>h3{
+    color:rgb(0, 81, 255);
+}
+/* .producs:hover a>.items-img>img{
+    transform: scale(1.1);
+    transition: all 0.4s;
+} */
+.producs:hover{
+    transform:scale(1.04);
+    transition: all 0.4s;
+}
+/* XONG PHẦN TUÀN LỄ REALMI */
+.shopping-trends{
+    display: block;
+    overflow: hidden;
+    margin: 0 0 30px;
+    border-radius: 12px;
+    background: linear-gradient(90deg,#ffecd2 0%,#fcb69f 100%);
+}
+.name-box{
+    display: block;
+    overflow: hidden;
+    padding: 15px 22px;
+    font-size: 22px;
+    line-height: 36px;
+    color: #333;
+    text-transform: uppercase;
+}
+.shopping-trends ul {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    padding: 0 22px 30px;
+}
+.shopping-trends ul li{
+    float: left;
+    width: 280px;
+    margin: 0 12px 0 0;
+    position: relative;
+}
+.shopping-trends ul li img{
+    display: block;
+    width: 100%;
+}
+.shopping-trends ul li span{
+    position: absolute;
+    bottom: 55px;
+    left: 18px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #333;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 250px;
+    height: 17px;
+}
+.shopping-trends ul li strong{
+    position: absolute;
+    bottom: 24px;
+    left: 18px;
+    font-size: 17px;
+    line-height: 20px;
+    color: #2f80ed;
+    font-weight: 500;
+}
+/* XONG PHẦN XU HƯỚNG MUA SẮM  */
+.cate-feature{
+    display: block;
+    overflow: hidden;
+    background: rgb(230, 228, 228);
+    margin-bottom: 30px;
+    border-radius: 12px;
+}
+.cate-feature .box-cate{
+    display: block;
+    overflow: hidden;
+    padding: 0 40px 30px;
+}
+.cate-feature .box-cate ul{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding-bottom: 10PX;
+}
+.cate-feature .box-cate ul li a{
+    display: block;
+    overflow: hidden;
+    color: #333;
+    text-align: center;
+    width: 112px;
+}
+.cate-feature .box-cate ul li a div{
+    margin: auto;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+.cate-feature .box-cate ul li img{
+    display: block;
+    margin: auto;
+    width: auto;
+    height: 60px;
+}
+.cate-feature .box-cate ul li span{
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    padding: 0 5px;
+}
+.service-conv{
+    display: block;
+    overflow: hidden;
+    background: rgb(230, 228, 228);
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+.name-box a{
+    float: right;
+    text-transform: none;
+    font-weight: 500;
+    color: #555;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.name-box a::after{
+    content: "\f06e";
+    font: var(--fa-font-solid);
+    font-size: 16px;
+    padding-left: 10px;
+}
+.name-box a:hover{
+    color: #2f80ed;
+    /* HOVOER CHUỘT VÀO XEM DỊCH VỤ THÊM */
+}
+.service-conv ul{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    padding: 0 22px 30px;
+}
+.service-conv ul li{
+    float: left;
+    width: 283px;
+    margin: 0 12px 0 0;
+    border-radius: 14px;
+    padding: 14px 10px;
+    background: #7db9f3;
+    cursor: pointer;
+}
+.service-conv ul li .box-iconv{
+    float: left;
+    font-size: 35px;
+    color: darkcyan;
+    margin: 0px 20px 10px 10px;
+}
+.service-conv ul li .text-conv{
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+.service-conv ul li .text-conv small{
+    display: block;
+    overflow: hidden;
+    font-size: 17px;
+    line-height: 25px;
+    color: #333;
+    padding: 6px 0 12px;
+    font-weight: 500;
+}
+/* XONG PHẦN DỊCH VỤ TIỆN ÍCH  */
+.danhSachSanPham{
+    margin-bottom: 30px;
+    background: rgb(230, 228, 228);
+    display: block;
+    border-radius: 12px;
+    padding: 5px 5px 10px 5px;
+}
+.danhSachSanPham .options-forme{
+    display: flex;
+    flex-flow: row;
+    padding: 0 0 15px;
+    text-align: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.danhSachSanPham .options-forme a{
+    display: block;
+    width: 285px;
+    margin: 0 5px;
+    background: #fff;
+    border-radius: 8px;
+    height: 70px;
+    padding: 8px 0;
+}
+.danhSachSanPham .options-forme a img{
+    display: inline-block;
+    margin: auto;
+    vertical-align: middle;
+    width: 50px;
+    height: auto;
+    margin-right: 7px;
+}
+/* XONG GỢI Ý SẢN PHẨM */
+
+.CongNghe24h{
+    display: flex;
+    align-items: stretch;
+    margin: 0 0 30px;
+    width: 100%;
+}
+.CongNghe24h .listQuangCao{
+    float: left;
+    width: 74%;
+    overflow: hidden;
+    background: rgb(230, 228, 228);
+    margin-right: 20px;
+    border-radius: 12px;
+}
+.CongNghe24h  .hopTacPhatTrien{
+    width: 24%;
+    display: block;
+}
+.CongNghe24h .listQuangCao ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 18px;
+}
+.CongNghe24h .listQuangCao ul li{
+    float: left;
+    width: 33%;
+    margin-right: 10px;
+}
+.CongNghe24h .listQuangCao ul li img{
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+}
+
+.CongNghe24h .listQuangCao ul li .khoi{
+    display: block;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333;
+    margin: 10px 10px 10px 0px;
+}
+/* XONH 24H CÔNG NGHỆ  */
+.trangThuongHieu{
+    display: block;
+    margin-bottom: 30px;
+}
+.trangThuongHieu #block-flex div{
+    margin: 0;
+    margin-right: 10px;
+}
+.trangThuongHieu #block-flex{
+    justify-content: space-between;
+}
+/* XONG CHUYÊN TRANG THƯƠNG HIỆU */
+.chuoiDealKhung-cha{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.chuoiDealKhung-cha .chuoiDealKhung-con{
+    width: 32%;
+    margin-right: 20px;
+}
+.chuoiDealKhung-cha .chuoiDealKhung-con a img{
+    width: 100%;
+    border-radius: 8px;
+}
+/* XONG PHẦN CHUỐI DEAAL KHỦNG */
+
+/* XONG HẾT MAIN TRANG WEB  */
+.footer-web-cha{
+    clear: both;
+    border-top: 1px solid #e2e2e2;
+    margin-top: 35px;
+    width: 100%;
+}
+#footer-web-cha{
+    border: none;
+    background-color: rgb(239 236 236);
+    padding: 10px 5rem;
+    font-size: 13px;
+    margin: auto;
+}
+.footer-web-cha .footer-web-con{
+    width: 87%;
+    margin: auto;
+    padding: 15px 0 5px;
+}
+.footer-web-cha .footer-web-con .footer-cot{
+    float: left;
+    width: 25%;
+}
+.footer-cot ul li{
+    margin-bottom: 5px;
+}
+.footer-cot ul li a ,p{
+    color: #000;
+    font-size: 15px;
+}
+.footer-cot ul li .phan-sau-xemthem::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 6px solid #333;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.hiddenn{
+    display: none;
+}
+.congcuhover:hover .hiddenn{
+    display: initial;
+}
+.congcuhover:hover p{
+    display:none;
+}
+.footer-cot ul li a:hover{
+    color: #1b6dc1;
+}
+/* XONG PHẦN CHÂN TRANG :-webkit-any() */
+.lenDauTrang{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 60px;
+    height: 60px;
+    background: rgb(255 255 255);
+    border-radius: 50%;
+    z-index: 10;
+    color: #000000a6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 4px 0px;
+    font-size: 25px;
+    padding: 14px;
+    visibility: visible;
+}
+.lenDauTrang:hover{
+    transform:scale(1.2);
+    transition: all 0.4s;
+}
+/* RÉPPONSIVE */
+@media only screen and (min-width: 741px) and (max-width: 1023px){
+    .header{
+        width: 100%;
+        min-height: 4rem;
+    }
+    .header .carousel-item{
+        min-height: 4rem;
+    }
+    .header .carousel-item .w-100{
+        height: 4rem ;
+    }
+    /* XONG ĐẦU TRANG  */
+}

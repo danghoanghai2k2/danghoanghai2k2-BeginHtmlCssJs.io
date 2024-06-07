@@ -1,0 +1,235 @@
+* {
+   margin: 0%;
+   padding: 0%;
+   box-sizing: border-box;
+}
+body {
+   width: 100%;
+   height: 110vh;
+   background-image: url('https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2018/08/nui-rung-dong-ta-bac29.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   position: relative;
+}
+body::after {
+   content: '';
+   width: 100%;
+   height: 100%;
+   background-color: black;
+   opacity: 0.5;
+   position: absolute;
+   top: 0%;
+   left: 0%;
+   z-index: 1;
+}
+.khoi_main_chinh {
+   position: absolute;
+   /* background-color: rgb(149, 150, 151); */
+   top: 0%;
+   left: 0%;
+   width: 100%;
+   height: 100%;
+   z-index: 2;
+}
+.main_chinh {
+   width: 100%;
+   /* min-height: 30rem; */
+   /* background-color: rgb(116, 115, 115); */
+}
+.main_chinh h1 {
+   color: white;
+   font-size: 50px;
+   text-align: center;
+   font-family: sans-serif;
+}
+.main_chinh .block_cha {
+   width: 85%;
+   /* border: 1px solid red; */
+   /* min-height: 10em; */
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.block_cha .block_con1 {
+   width: 67%;
+   height: 33rem;
+   background-color: #ffffff;
+   padding: 20px;
+   /* margin: 10px; */
+}
+.block_cha .block_con2 {
+   width: 30%;
+   height: 33rem;
+   /* background-color: red; */
+   /* margin: 10px; */
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.block_con2 .block_flex1 {
+   width: 100%;
+   height: 55%;
+   background-color: rgb(21 32 62);
+}
+.block_con2 .block_flex2 {
+   width: 100%;
+   height: 40%;
+   background-color: rgb(21 32 62);
+}
+.block_flex2 iframe {
+   width: 100%;
+   height: 100%;
+   border-radius: 10px;
+}
+tr td div,
+h2 {
+   margin: 10px;
+   color: aqua;
+}
+p {
+   margin: 0%;
+}
+.textarea {
+   margin: 10px;
+}
+
+textarea {
+   width: 95%;
+   resize: none;
+   outline: none;
+}
+
+table .redder {
+   color: brown;
+   width: 100%;
+   height: 40px;
+   /* outline: none; */
+}
+.textarea .redder {
+   color: brown;
+   width: 100%;
+}
+.white {
+   color: white;
+   font-family: system-ui;
+}
+.redder:focus {
+   /* color: brown; */
+   background-color: rgba(255, 255, 0, 0.603);
+   font-style: italic;
+}
+.redder::placeholder {
+   color: brown;
+}
+.padding {
+   padding: 20px;
+}
+.float_left {
+   float: left;
+}
+.clearfix {
+   display: flex;
+   align-items: center;
+   margin: 10px 0;
+   min-width: 114%;
+}
+.clearfix::after {
+   content: '';
+   clear: both;
+   display: table;
+}
+.block_con2 .block_flex1 .div1 {
+   display: inline-block;
+   width: 2em;
+   height: 2em;
+   background: #0000ffd1;
+   border-radius: 50%;
+   text-align: center;
+   line-height: 2em;
+   font-size: 19px;
+   /* box-shadow: 1px -1px 10px; */
+   box-shadow: black;
+   margin-right: 1em;
+}
+.icon {
+   color: rgb(119, 117, 114);
+   margin: 5px;
+   font-size: 30px;
+}
+.bodder_radus {
+   border-radius: 10px;
+}
+@media only screen and (min-width: 741px) and (max-width: 1023px) {
+   .main_chinh .block_cha {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+   }
+   .block_cha .block_con1 {
+      width: 95%;
+      margin-bottom: 2rem;
+      background-color: none;
+   }
+   .block_cha .block_con2 {
+      width: 95%;
+      font-size: 25px;
+      min-height: 40rem;
+   }
+   .block_con2 .block_flex1 {
+      width: 100%;
+      min-height: 25rem;
+      margin-bottom: 2rem;
+   }
+   .block_con2 .block_flex1 .div1 {
+      font-size: 30px;
+   }
+   .icon {
+      font-size: 40px;
+   }
+}
+@media only screen and (max-width: 740px) {
+   body {
+      width: 102%;
+      background-image: none;
+   }
+   .main_chinh .block_cha {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+   }
+   .block_cha .block_con1 {
+      width: 100%;
+      margin-bottom: 2rem;
+   }
+   .block_cha .block_con2 {
+      width: 100%;
+      font-size: 25px;
+      min-height: 40rem;
+   }
+   .clearfix {
+      width: 100%;
+   }
+   .block_con2 .block_flex1 {
+      width: 100%;
+      min-height: 25rem;
+      margin-bottom: 2rem;
+   }
+   .block_con2 .block_flex1 .div1 {
+      font-size: 30px;
+   }
+   .icon {
+      font-size: 40px;
+   }
+}
+@media only screen and (max-width: 480px) {
+   .clearfix {
+      font-size: 16px;
+      width: 90%;
+   }
+   .main_chinh h1 {
+      font-size: 35px;
+   }
+}

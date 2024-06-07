@@ -1,0 +1,115 @@
+#font {
+   /* 
+   thứ tự nếu viết tắt
+   font:
+   font-style,
+   font-variant,
+   font-weight,
+   font-size/line-height,
+   font-family;
+
+   font-size và family là bắt buộc
+    */
+   font: italic normal 50px/50px 'Dancing Script', cursive;
+}
+h1:nth-child(1) {
+   font-family: 'Dancing Script', cursive;
+}
+h1 {
+   /* thuộc tính định dạng chữ  */
+   text-transform: capitalize;
+   /* font-variant: small-caps;  biến thể của chữ hoa*/
+   /* capitalize : viết hoa chữ cái đầu
+   lowercase : viết thường chữ cái
+   uppercase : viết hoa chữ cái */
+}
+h1:nth-child(2) {
+   /* thuộc tính rgb() : thứ 4 là opacity */
+   color: rgba(192, 57, 43, 0.5);
+   background: rgb(9, 121, 90);
+   background: linear-gradient(
+      90deg,
+      rgba(9, 121, 90, 1) 36%,
+      rgba(9, 103, 121, 1) 66%,
+      rgba(0, 212, 255, 1) 100%
+   );
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+h1:nth-child(3) {
+   /* thuộc tính rgb() : thứ 4 là opacity */
+   background-color: rgb(255, 0, 96);
+}
+h1:nth-child(4) {
+   font-size: 50px;
+}
+h1:nth-child(5) {
+   font-weight: bolder 700;
+   /* thuộc tính nhận : lighter normal ,bold ,bolder  */
+   /* và từ 100 -> 900 tùy theo độ đậm chữ  */
+}
+h1:nth-child(6) {
+   font-style: italic;
+   /* thuôc tính này có 2 dạng italic và normal(auto with web) */
+}
+h1:nth-child(7) {
+   /* line-through: gạch giữa chữ;
+   overline : gạch đầu chữ
+   underline : gạch chân dưới chữ */
+   text-decoration-line: underline; /* kiểu gạch chữ*/
+   text-decoration-color: red; /* màu gạch chân */
+   /* viết tắt  */
+   text-decoration: overline underline yellow;
+}
+h1:nth-child(8) {
+   text-align: justify;
+   /* justify căn chỉnh sao cho chiều rộng các dòng bằng nhau 
+   center căn chỉnh ra giữa
+   right , left căn phải, trái */
+
+   text-align-last: center;
+   /* text-align-last là căn chỉnh dòng cuối */
+   vertical-align: middle;
+   /* căn dọc của văn bản hoặc block  */
+}
+h1:nth-child(8) > p:last-child {
+   direction: rtl; /* rtl right to left ,ltr ngược lại  */
+   unicode-bidi: bidi-override; /* để ghi đè lại kiểu chữ viết */
+}
+h1:nth-child(9) {
+   text-shadow: 20px 4px 10px yellow; /* độ bóng đằng sau chữ*/
+   /* giá trị : ngang dọc mờ màu */
+
+   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+   /* có thể kết hợp nhiều bóng chữ  */
+}
+.block .p_one {
+   text-indent: 50px;
+   /* thụt vào đầu dòng */
+   letter-spacing: 2px;
+   /* khoảng cách giữa các chữ  */
+   line-height: 50px;
+   /* khoảng cách dòng trên và dưới  */
+   word-spacing: 10px;
+   /* khoảng cách giữa các từ  */
+
+   white-space: nowrap; /* là thuộc tính xử lý các khoảng trắng lớn trong content  */
+   /* normal : là mặc định 
+   nowrap : là không xuống dòng
+   pre : là giữ nguyên khoảng trắng */
+
+   word-break: normal; /* đây là thuộc tính để cắt từ xuống dòng  */
+   /* normal : là cắt từ đó xuống dòng khi từ quá dài
+   break-all : là cắt các chữ cái xuống dòng kệ từ quá dài 
+   keep-all : là không cắt chữ mà ghi đủ chữ  */
+
+   word-wrap: normal; /* là một thuộc tính kiểm soát cách các từ dài được xử lý khi không thể xuất hiện trên một dòng trong một phần tử */
+   /* normal (mặc định): Trình duyệt sẽ cố gắng duy trì nguyên vẹn các từ dài trên một dòng, 
+   break-word: Trình duyệt sẽ cắt các từ dài để làm cho chúng vừa với khung chứa hoặc vùng hiển thị */
+}
+.text_hidden {
+   display: -webkit-box; /*trong khối div */
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 1; /*số dòng để .....*/
+   overflow: hidden; /*hết đoạn văn ......*/
+}

@@ -1,0 +1,50 @@
+.boxed {
+   background-color: yellow;
+   border-style: dotted;
+   /* kiểu dữ liệu của boder 
+   dotted : dấu chấm  
+   dashed : nét đứt
+   double : có 2 dòng viền 
+   groove, ridge: viền có kẻ 3d
+   none : không có đường viền
+   hidden : ẩn đường viền*/
+}
+.size {
+   width: 20rem;
+   height: 10rem;
+}
+.margin_top {
+   margin-top: 20px;
+}
+.boxed2 {
+   border-width: 5px;
+}
+.boxed3 {
+   /* viết theo mỗi viền một loại màu */
+   border-color: aqua red green blue;
+   border-width: 5px;
+   /* viêt mỗi loại kiểu viền */
+   border-style: solid dashed dotted;
+}
+.boxed4 {
+   background-color: aqua;
+   /* border-width
+      border-style (required)
+      border-color */
+   border: 2px solid black;
+   border-left: 5px dashed red;
+}
+.boxed5 {
+   background-color: green;
+   /* làm cong đường viền  */
+   border-radius: 10px;
+   /* dùng công cụ để chỉnh */
+   border-radius: 0% 100% 0% 100% / 56% 40% 60% 44%;
+   /* border-radius: 50%;là hình tròn */
+}
+.a {
+   /* border-image: url(); thuộc tính viền ảnh  */
+   border: 5px solid transparent;
+   border-image: url(https://t4.ftcdn.net/jpg/00/95/85/29/360_F_95852909_xftk3cRpiJiOx2NQDEPUq9mxlPGjVkTI.jpg)
+      10% round;
+}

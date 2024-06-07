@@ -1,0 +1,164 @@
+/* học về trasition:
+- short syntax(viết ngắn)
+transition :
++ property: loại animation
++ duration : thời gian hiệu ứng chạy
++ timing-function: kiểu animation 
++ delay : sau bấm start bao nhiêu lâu thì chạy  */
+
+/* - full syntax(viết đủ)
++ transition-property : color , 
++ transition-duration: time(secound)
++ trasition-timing-function:  animation type
++ trasition-delay: time */
+
+/* TIME-FUNCTION 
+linear : cùng tốc độ 
+ease : start châm -> nhan -> end chậm
+ease-in	:  start chậm	
+ease-out : end chậm
+ease-in-out : khởi đầu và kết thúc chậm  */
+
+.link,
+.link2,
+.link3,
+.link4,
+.link5,
+.link6 {
+   display: block;
+   padding: 15px 35px;
+   background-color: transparent;
+   color: rgb(255, 255, 0);
+   transition: all 1s linear 0s;
+   position: relative;
+   border: 1px solid rgba(0, 0, 0, 0.144);
+   border-radius: 10px;
+   cursor: pointer;
+}
+.link::before,
+.link2::before,
+.link3::before,
+.link4::before {
+   content: '';
+   position: absolute;
+   left: 0%;
+   top: 0%;
+   width: 0%;
+   height: 100%;
+   z-index: -1;
+   border-radius: inherit;
+   background-color: brown;
+   transition: width 0.2s linear;
+}
+.link2::before {
+   left: 50%;
+   transform: translate(-50%);
+}
+.link3::before {
+   width: 2px;
+   height: 0px;
+   transition: width 0.2s linear, height 0.2s linear;
+}
+.link4::before {
+   width: 2px;
+   height: 0px;
+   transition: height 0.2s linear, width 0.2s linear 0.2s;
+}
+.link5,
+.link6 {
+   border: none;
+}
+.link:hover:before,
+.link2:hover:before {
+   width: 100%;
+}
+.link3:hover:before,
+.link4:hover:before {
+   height: 100%;
+   width: 100%;
+}
+
+/*  LÀM VIỀN CHẠY QUANH QUANH */
+.link5,
+.link6 {
+   border-radius: 10px;
+   overflow: hidden;
+}
+.link5::before,
+.link6::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-color: brown;
+   width: 0%;
+   height: 100%;
+   z-index: -1;
+   transition: all 0.25s linear 0.25s;
+}
+.link6::before {
+   transition-delay: 1s;
+}
+.link5 span,
+.link6 span {
+   position: absolute;
+   display: block;
+   background-color: brown;
+   transition: all 0.25s linear;
+}
+.link5 span:nth-child(1),
+.link6 span:nth-child(1) {
+   top: 0;
+   left: 0;
+   width: 0%;
+   height: 2px;
+}
+.link6 span:nth-child(2) {
+   transition-delay: 0.25s;
+}
+.link6 span:nth-child(3) {
+   transition-delay: 0.5s;
+}
+.link6 span:nth-child(4) {
+   transition-delay: 0.75s;
+}
+.link5 span:nth-child(2),
+.link6 span:nth-child(2) {
+   top: 0;
+   right: 0;
+   width: 2px;
+   height: 0%;
+}
+.link5 span:nth-child(3),
+.link6 span:nth-child(3) {
+   bottom: 0;
+   right: 0;
+   width: 0%;
+   height: 2px;
+}
+.link5 span:nth-child(4),
+.link6 span:nth-child(4) {
+   bottom: 0;
+   left: 0;
+   width: 2px;
+   height: 0%;
+}
+/* odd trong :nth-child(là số lẻ)  even là số chắn*/
+.link5:hover::before,
+.link6:hover::before {
+   width: 100%;
+}
+.link5:hover span:nth-child(odd),
+.link6:hover span:nth-child(odd) {
+   width: 100%;
+}
+.link5:hover span:nth-child(even),
+.link6:hover span:nth-child(even) {
+   height: 100%;
+}
+
+/* học về transform(thay đổi kích thước  hình dạng) 
+transform :
++ scale(numbers) : độ lớn hơn so với numbers
++ rotate() :xoay bao nhiêu độ
++ có nhiều kiểu có thể lên f12 rồi chỉnh */

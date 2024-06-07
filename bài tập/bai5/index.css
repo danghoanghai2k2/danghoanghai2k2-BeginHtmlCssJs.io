@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(91, 160, 154);
+    width: 100%;
+    min-height: 100vh;
+}
+.container{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:repeat(6,1fr) ;
+    grid-auto-rows: minmax(60px,auto);
+    column-gap: 15px;
+    row-gap: 15px;
+}
+.container .item{
+    /* background:yellow;
+    border: 1px solid black;
+    border: none; */
+    min-height: 80px;
+
+}
+.container .item_1{
+    grid-column: 1/3;
+    grid-row: 1/4;
+    background-image: url("https://static2.yan.vn/YanNews/202203/202203150551328043-4c92a17b-8427-421a-a237-7a396faf06cd.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container .item_2{
+    grid-column: 3/4;
+    grid-row: 1/5;
+    background-image: url("https://thuthuat.com.vn/wp-content/uploads/2022/07/hinh-anh-meo-con-cute-chon-loc_042939344.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container .item_3{
+    grid-column: 4/5;
+    grid-row: 1/4;
+    background-image: url("http://uyenuong.net/wp-content/uploads/2022/05/Hinh-anh-meo-ngau-nhat2B2528332529.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container .item_4{
+    grid-column: 1/2;
+    grid-row: 4/7;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMYZs0S9LijUFhuJxe72HYXcTIUsObXACf2w&usqp=CAU");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container .item_5{
+    grid-column: 2/3;
+    grid-row: 4/7;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScpngv769D7wzoD7JTvu5o8HbSGDIbjtVefA&usqp=CAU");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container .item_6{
+    grid-column: 3/5;
+    grid-row: 5/7;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuwWlspf3K-qErsMTtJc0QdBeEPqf-zGQWeQ&usqp=CAU");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container .item_7{
+    background-image: url("https://upanh123.com/wp-content/uploads/2020/11/hinh-anh-con-meo-cute5-1024x640.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.radious{
+    box-shadow: 2px 2px 5px 2px white;
+}

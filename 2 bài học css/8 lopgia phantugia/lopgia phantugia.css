@@ -1,0 +1,133 @@
+* {
+   margin: 0%;
+   padding: 0%;
+   box-sizing: border-box;
+}
+ul li {
+   list-style: none;
+   font-size: large;
+}
+/*
+
+THUỘC TÍNH LỚP GIẢ
+
+:hover là di chuyển chuột vào sẽ thay đổi
+
+:active là click chuột vào sẽ thay đổi
+
+:focus là hay dùng trong input thay đổi trong đó(TƯƠNG TỰ active)
+
+
+THƯỜNG DÙNG TRONG THẺ TẬP HỢP, CHA CON
+
+:first-child : phần tử đầu của thằng cha 
+
+:after-child :phần tử cuối cuat thằng cha 
+
+:nth-child(n) : phần tử thứ n của thằng cha 
+
+:nth-last-child(n) : phần tử thứ n cuối cùng của thằng cha và lặp ngược lại 
+
+:only-child : phần tử con duy nhất của thằng cha
+
+:checked : dùng trong thẻ radio buttom, selecet (chọn vào luôn 1 phần tử )
+
+:empty : tham chiếu đén phần tử không có phần tử con
+
+: not(selector) : tất cả phần selector trừ not()
+
+:is(selector) : selector muấn nhận thuộc tính trong cha
+
+:where(selector) : cách dùng giống is:() nhưng độ ưu tiên thấp nhất
+
+*/
+ul .hover:hover {
+   color: red;
+}
+.active:active {
+   color: yellow;
+   font-size: 50px;
+   background-color: brown;
+}
+.forcus:focus {
+   color: aqua;
+   background-color: yellow;
+}
+ul.text li:first-child {
+   font-size: 50px;
+}
+ul.text li:last-child {
+   font-size: 50px;
+}
+ul.testtwo :nth-child(4) {
+   color: yellow;
+}
+ul::marker {
+   color: red;
+}
+.div_box_one :is(p:nth-child(1), p:nth-child(2), .p_fore) {
+   color: yellow;
+   transition: color 0.25s linear;
+}
+.div_box_one :is(.p_fore, .p_one):hover {
+   color: red;
+}
+/*
+
+
+THUỘC TÍNH PHẦN TỬ GIẢ
+::after : sau phần tử được chọn
+
+::before : trước phần tử được chọn
+
+::first-line : dòng đầu của đoạn văn 
+
+::first-letter : kí tự đầu của văn bản 
+
+::marker : dùng để chọn các điểm đánh dấu của các mục danh sách (ul ,ol)
+
+::placeholder : dùng trong kí tự placeholder
+
+*/
+.textthree::first-line {
+   color: yellow;
+   font-size: 30px;
+}
+.textthree::first-letter {
+   background-color: rebeccapurple;
+   font-weight: bolder;
+   font-family: cursive;
+}
+.two::after {
+   /* đây là cách cho ảnh vào tiền tố  */
+   content: '';
+   background-image: url('https://i.pinimg.com/736x/af/de/15/afde158de9df5b66ad75831aeda00f74.jpg');
+   background-size: 100%;
+   display: inline-block;
+   width: 10px;
+   height: 10px;
+   padding: 10px;
+}
+.one::after {
+   /* cách thêm chữ vào đoạn văn sau  */
+   content: ' END !!!';
+   color: aqua;
+}
+.three::selection {
+   content: ' END !!!';
+   color: aqua;
+}
+input .one::before {
+   /*    cách thêm icon vào trước đoạn văn 
+        phiên bản 6.
+            font-family: "Font Awesome\ 5 Brands";
+            mã là brands 
+
+            hoặc font: var(--fa-font-brands;
+    */
+   content: '\f09a';
+   color: aqua;
+   /* font-family: "Font Awesome\ 5 Brands"; */
+   font: var(--fa-font-brands);
+   font-size: 50px;
+}

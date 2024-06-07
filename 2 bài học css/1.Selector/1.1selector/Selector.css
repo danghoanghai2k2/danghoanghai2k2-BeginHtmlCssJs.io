@@ -1,0 +1,105 @@
+h1 {
+   color: yellow;
+}
+.red {
+   color: red;
+}
+#blue {
+   color: blue;
+   font-size: 50px;
+}
+.farther > h1 {
+   color: palevioletred;
+}
+.bg_green {
+   background-color: green;
+}
+/* BÀI HỌC 2 */
+
+/* + : nằm niền kề nhau mới dùng thuộc tính  */
+.h1_one + .block {
+   color: red;
+   font-size: 30px;
+}
+
+/* nằm cùng cấp dùng ~ */
+.block ~ .block_two {
+   color: orange;
+   font-size: 15px;
+   text-decoration: underline;
+}
+.block_two > .ul_two > li:nth-of-type(3) ~ li {
+   color: #000;
+}
+.block ~ h1 {
+   text-transform: capitalize;
+}
+
+/* trỏ đến cha con trong thẻ dùng > hoặc dấu cách */
+.block_three > .ul_three > li {
+   list-style: square;
+}
+/* học về thuộc tính :nth-child()con trong thẻ */
+.block_three > .ul_three > li:first-child {
+   color: rebeccapurple;
+}
+.block_three > .ul_three > li:last-child {
+   color: #ffeaa7;
+}
+.block_three > .ul_three > li:nth-child(4) {
+   color: #1e3799;
+}
+.block_three > .ul_three > li:nth-child(1) {
+   color: #1e3799;
+}
+/*  */
+/*  */
+.block_four .ul_four :first-child {
+   font-size: 30px;
+}
+.block_four .ul_four :last-child {
+   font-size: 30px;
+   font-weight: 700;
+}
+.block_four .ul_four :nth-child(3) {
+   font-size: 30px;
+   font-weight: 700;
+   color: rebeccapurple;
+}
+/* thẻ type */
+.block_four > .ul_four_two > :first-of-type {
+   color: blue;
+}
+.block_four > .ul_four_two > :last-of-type {
+   color: yellow;
+}
+.block_four > .ul_four_two > li:nth-of-type(3) {
+   color: rgb(255, 82, 82) !important;
+}
+/* học về [] , * , $ */
+input[style^='cursor'] {
+   font-size: 40px;
+   color: #1e3799;
+}
+input[type$='r'] {
+   color: orange;
+}
+input[type='email'] {
+   font-size: 30px;
+}
+/* ^= or *= : là có chứa trong thẻ 
+   $= : là cuối cùng trong thẻ
+*/
+h1[title^='tiêu đề nhé'] {
+   text-decoration: line-through;
+   color: #1e3799;
+}
+/* :not là thuộc tính ngoại trừ không nhận  */
+.ul_li > ul > li:not(:nth-of-type(3)) {
+   color: orange;
+}
+.p_first-letter::first-letter {
+   /* trỏ đến giá trị đầu tiên  */
+   font-size: 50px;
+   color: red;
+}

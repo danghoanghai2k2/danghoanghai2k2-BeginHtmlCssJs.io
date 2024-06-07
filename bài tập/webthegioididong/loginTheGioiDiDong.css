@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+p{
+    margin: none;
+    padding: none;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul ,li,ol,h5{
+    list-style: none;
+    padding-left: 0px;
+    margin-bottom: 0;
+}
+.main-chinh{
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://cdn.tgdd.vn/Files/2018/08/21/1111379/fa_1280x719-800-resize.jpg");
+  background-size: contain;
+  background-position: 40%;
+  background-color: #eddf3e;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.main-chinh::after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.3;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 1;
+}
+.main-chinh .loginDangNhap{
+    width: 80%;
+    height: 480px;
+    background-color: #ee9f0c;
+    background-image: url(https://vieclam.thegioididong.com/img/web/thumb_fb.jpg);
+    margin: 75px auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: -158px;
+}
+/* .main-chinh .loginDangNhap::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.2;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+} */
+.main-chinh-con, .loginDangNhap-con{
+    position:absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+.loginDangNhap-con .SignUp-Web{
+    width: 40%;
+    height: 100%;
+    background: rgb(0 0 0 / 86%);
+    float: right;
+    color:white;
+    font-family: 'Rubik', sans-serif;
+    padding: 10px 2em;
+}
+.loginDangNhap-con .SignUp-Web h1{
+    margin: 0.5em 0;
+}
+.loginDangNhap-con .SignUp-Web table{
+    width: 100%;
+}
+.loginDangNhap-con .SignUp-Web div table tr td input{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    width: 100%;
+    outline: none;
+    padding: 7px 0;
+    color: white;
+    font-size: 18px;
+}
+.loginDangNhap-con .SignUp-Web div table tr td input::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+}
+.loginDangNhap-con .SignUp-Web .checkBoox{
+    margin-top: 20px;
+}
+#d-flex a{
+    text-decoration: underline;
+}
+#d-flex a:hover{
+    color:red;
+    transition: all 0.5s ;
+}
+.buttomss{
+    width: 70%;
+    margin: 5px 3.5rem;
+}
+/* PHẦN CHÂN TRANG WEB  */
+.footer-web-cha{
+    clear: both;
+    border-top: 1px solid #e2e2e2;
+    margin-top: 35px;
+    width: 100%;
+}
+#footer-web-cha{
+    border: none;
+    background-color: rgb(239 236 236);
+    padding: 10px 5rem;
+    font-size: 13px;
+    margin: auto;
+}
+.footer-web-cha .footer-web-con{
+    width: 87%;
+    margin: auto;
+    padding: 15px 0 5px;
+}
+.footer-web-cha .footer-web-con .footer-cot{
+    float: left;
+    width: 25%;
+}
+.footer-cot ul li{
+    margin-bottom: 5px;
+}
+.footer-cot ul li a ,p{
+    color: #000;
+    font-size: 15px;
+}
+.footer-cot ul li .phan-sau-xemthem::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 6px solid #333;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.hiddenn{
+    display: none;
+}
+.congcuhover:hover .hiddenn{
+    display: initial;
+}
+.congcuhover:hover p{
+    display:none;
+}
+.footer-cot ul li a:hover{
+    color: #1b6dc1;
+}
+/* HẾT PHẦN CHÂN TRANG WEB  */

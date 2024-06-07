@@ -1,0 +1,80 @@
+/* Ẩn radio button mặc định */
+input[type='radio'] {
+   display: none;
+}
+
+/* Tạo một thay thế cho radio button */
+.custom-radio {
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   border: 2px solid #ccc;
+   border-radius: 50%;
+   margin-right: 8px;
+   position: relative;
+   cursor: pointer;
+}
+
+/* Thay đổi màu cho radio button đã chọn */
+.custom-radio:checked {
+   border-color: #007bff;
+   background-color: #007bff;
+}
+
+/* Thay đổi màu cho indicator (dấu hiệu) */
+.custom-radio::before {
+   content: '';
+   display: block;
+   width: 10px;
+   height: 10px;
+   background-color: #fff;
+   border-radius: 50%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   opacity: 0;
+}
+
+/* Thay đổi màu cho indicator khi đã chọn */
+.custom-radio:checked::before {
+   background-color: #007bff;
+   opacity: 1;
+}
+
+/* Điều chỉnh checkbox button khi chưa chọn */
+input[type='checkbox'] {
+   /* Màu nền */
+   background-color: #f0f0f0;
+   /* Màu viền */
+   border: 1px solid #ccc;
+   /* Kích thước */
+   width: 18px;
+   height: 18px;
+   /* Ẩn default checkbox */
+   appearance: none;
+}
+
+/* Điều chỉnh checkbox button khi đã chọn */
+input[type='checkbox']:checked {
+   /* Màu nền khi đã chọn */
+   background-color: #007bff;
+   /* Màu viền khi đã chọn */
+   border-color: #007bff;
+}
+
+/* Indicator (dấu hiệu khi đã chọn) */
+input[type='checkbox']::before {
+   content: '\2713'; /* Ký tự checkmark Unicode */
+   display: block;
+   font-size: 14px; /* Kích thước ký tự */
+   color: transparent; /* Ẩn ký tự ban đầu */
+   position: relative;
+   top: 0.5px; /* Điều chỉnh vị trí */
+   left: 1px;
+}
+
+/* Indicator khi đã chọn */
+input[type='checkbox']:checked::before {
+   color: #fff; /* Màu của checkmark khi đã chọn */
+}

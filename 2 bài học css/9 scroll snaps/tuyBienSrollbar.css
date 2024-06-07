@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 300vh;
+}
+/* đặt thuộc tính srollbar cho thẻ body */
+body::-webkit-scrollbar{
+    width: 100px;
+}
+/* set nền đằng sau thanh scrollbar */
+body::-webkit-scrollbar-thumb{
+    background-color:rgb(255, 94, 0);
+    border-radius:10px
+}
+/* set thanh srollbar cho trang web  */
+body::-webkit-scrollbar-track{
+    background-color:rgb(110, 194, 77);
+    border-radius:10px
+}
+/* set nút buttom lên xuống cho trang web  */
+body::-webkit-scrollbar-button{
+    background-color: blue;
+    
+}

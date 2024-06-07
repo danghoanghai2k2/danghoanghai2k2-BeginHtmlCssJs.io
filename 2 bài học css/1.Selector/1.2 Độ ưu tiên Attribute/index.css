@@ -1,0 +1,63 @@
+* {
+   margin: 0;
+   margin-left: 1rem;
+   padding: 0;
+   box-sizing: border-box;
+   color: aqua;
+}
+li {
+   list-style: square;
+   margin: 10px auto;
+}
+/* thuộc tính này ăn toàn trang web */
+p {
+   color: aqua;
+   /* thẻ này gọi trước */
+}
+p {
+   font-size: 50px;
+   color: yellow;
+}
+h1 {
+   resize: none;
+   color: red;
+}
+/* thuộc tính nào cùng cấp gọi sau thì ưu tiên hơn  */
+.h1_head {
+   color: palevioletred;
+   text-decoration: underline;
+   font-size: 20px;
+}
+.h1_head {
+   color: yellow;
+   text-decoration: underline;
+   text-transform: capitalize;
+   font-size: 30px;
+}
+#h1_head {
+   color: red;
+}
+/* thuộc tính trỏ đến phần tử cha con  */
+div > ul > li {
+   color: #000;
+}
+div > ul > .li_one {
+   color: #a59696;
+}
+div > ul > li:first-child {
+   color: #a59696;
+}
+div > ul > .li_one:first-child {
+   color: #1b2c04;
+}
+div > ul > #li_one {
+   color: #3cff00;
+}
+div > ul > #li_one:first-child {
+   color: aqua;
+   font-size: 20px;
+}
+div > ul > li:first-child {
+   color: #a59696 !important;
+   /* thuộc tính !important là mạnh nhất trong độ ưu tiên */
+}

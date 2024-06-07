@@ -1,0 +1,71 @@
+/* viết đủ
+   background-color: #ffffff;
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+
+  có thể viết tắt
+  background: #ffffff url("img_tree.png") no-repeat right top; */
+
+.boxed {
+   width: 300px;
+   height: 300px;
+   background-color: yellow;
+   text-align: center;
+   line-height: 300px;
+   font-size: 30px;
+   opacity: 0.7;
+}
+.boxed2 {
+   width: 30rem;
+   height: 20rem;
+   background-image: url('../../1 bài học html/khoahoc2.jpg');
+
+   background-repeat: repeat-y;
+   /* thuộc tính lặp no-repeat : không , repeat-x lặp ngang , repeat-y:lặp dọc repeat lặp 2 chiều (auto)*/
+   background-color: green;
+   background-size: contain;
+   background-position: center;
+   background-position: bottom right;
+   /* giá trị truyền vào gồm 2 giá trị 
+   có thể truyền giá trị tuyệt đối, tương đối
+   có giá trị top ,left ,right ,bottom ,center */
+}
+.boxed3 {
+   width: 30rem;
+   height: 20rem;
+   background-color: green;
+   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPl6cN04e_V_Qgy4ik4CHODlay32-cYL5MMw&usqp=CAU');
+   background-size: contain; /* để set cho các nền ảnh có kích thước vs box */
+   background-repeat: no-repeat;
+}
+body {
+   background-image: url('../../1 bài học html/khoahoc2.jpg');
+   background-attachment: fixed; /* thuộc tính này để xem ảnh có di chuyển theo màn hinhd không fixed scroll (auto)*/
+   background-position: right top;
+   background-repeat: no-repeat;
+}
+.box {
+   width: 30rem;
+   height: 10rem;
+   background-color: yellow;
+   padding: 30px;
+   border: 10px dashed black;
+   background-image: url('../../1 bài học html/khoahoc2.jpg');
+   background-repeat: no-repeat;
+
+   background-clip: content-box;
+   /* thuộc tính này sẽ lấy màu lền ảnh nền từ giá trị mà nó nhận
+    content-box : lấy từ content 
+    padding-box : lấy từ padding 
+    border-box : lấy từ border (auto) */
+}
+#box {
+   margin: 30px 0;
+   background-clip: border-box;
+   background-origin: padding-box;
+   /* thuộc tính này sẽ lấy ảnh nền từ giá trị mà nó nhận
+    content-box : lấy từ content 
+    padding-box : lấy từ padding 
+    border-box : lấy từ border (auto) */
+}

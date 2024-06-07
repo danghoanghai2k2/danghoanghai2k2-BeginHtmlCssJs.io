@@ -1,0 +1,28 @@
+.boxed_one {
+   margin-top: 20px;
+   margin-left: 20px;
+   margin-right: 20px;
+   margin-bottom: 20px;
+   /* có thể viết tắt margin 
+    margin :20px ; toàn bộ đối tượng 
+    margin :20px 10px; trên dưới 20px trái phải 10px
+    margin: 10px 30px 20px; trên 10px, 2 bên 30px dưới 20px
+    */
+   margin: 30px;
+}
+.size {
+   width: 50%;
+   height: 10rem;
+   background-color: blue;
+}
+.boxed_two > input {
+   padding-top: 10px;
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-bottom: 10px;
+   /* có thể viết tắt padding  */
+   padding: 20px;
+   /* áp dụng cho toàn đối tượng  */
+   /* padding: 20px 10px; trên dưới 20px hai bên 10px
+   padding :20px 30px 10px trên 20px hai bên 30px dưới 10px */
+}

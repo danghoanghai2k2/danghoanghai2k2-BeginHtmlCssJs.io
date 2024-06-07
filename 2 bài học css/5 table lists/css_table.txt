@@ -1,0 +1,20 @@
+thuộc tính viền bảng 
+border-collapse: collapse;
+câu lệnh giúp thu gọn viền bảng không có 2 viền
+
+kích thước chỉnh bảng 
+width , height ;
+
+thuộc tính căn chỉnh bảng 
+
+căn chiều ngang
+text-align: ;
+center : giữa
+left : trái
+right : phải
+
+căn chiều dọc 
+vertical-align:;
+top : trên
+center :giữa
+bottom :dưới

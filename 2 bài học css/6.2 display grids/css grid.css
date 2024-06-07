@@ -1,0 +1,83 @@
+.item {
+   background-color: yellow;
+   border: 1px solid #000;
+}
+.container {
+   display: grid;
+   grid-template-columns: 200px 2fr 1fr;
+   /* grid-template-columns tạo lên cột của grid 
+      + có thể dùng đơn vị đo tương và tuyệt đối 
+      + có thể dùng đơn vị fr */
+
+   grid-template-rows: repeat(1, 1fr);
+   /* grid-template-rows là tạo ra hàng 
+       + có thể dùng đơn vị đo tương và tuyệt đối 
+      + có thể dùng đơn vị fr */
+
+   grid-auto-rows: minmax(1rem, auto);
+   /* là thuộc tính mà khi tự động set hàng tiếp theo có giá trị là bao nhiêu
+   có thể dùng minmax(giá trị bé nhất, giá trị lớn nhất) */
+
+   grid-auto-columns: 10rem;
+   /* là thuộc tính mà khi tự động set cột có giá trị là bao nhiêu
+   có thể dùng minmax(giá trị bé nhất, giá trị lớn nhất) */
+}
+#containner {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(3, 1fr);
+   grid-auto-rows: minmax(5rem, auto);
+
+   grid-column-gap: 30px; /* khoảng cách giữa các cột  */
+
+   grid-row-gap: 10px; /* khoảng cách giữa các dòng */
+
+   grid-gap: 10px 20px; /* cách viết tắt của 2 cái trên grid-gap:hàng cột; */
+}
+.item1 {
+   /* thuộc tính này để phân bổ các item vào các cột line tương ứng  */
+   grid-column-start: 1; /* bắt đầu từ line nào */
+   grid-column-end: 3; /* kết thúc từ line nào  */
+   /* grid-column: 1/3; đây là cách viết tắt của cái trên  */
+}
+.item2 {
+   grid-column: 3/4; /* đây là cách viết tắt của cái trên  */
+}
+.item3 {
+   grid-row-start: 2;
+   grid-row-end: 4;
+   grid-row: 2/4; /* đây là cách viết tắt của cái trên */
+}
+.item4 {
+   grid-column: 2/4;
+   grid-row: 2/4;
+}
+.item5 {
+   grid-row: 4/6;
+   /* người code viết là 3 hàng nhưng sẽ tự động sinh thêm hàng khi viết gán thêm vào line */
+}
+#grid_erae {
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(1, 1fr);
+   grid-auto-rows: minmax(3rem, auto);
+   grid-template-areas:
+      'hh hh hh'
+      'tt c cc'
+      'tt c cc'
+      'ff mm m';
+}
+.item1s {
+   grid-area: hh;
+}
+.item2s {
+   grid-area: cc;
+}
+.item3s {
+   grid-area: tt;
+}
+.item4s {
+   grid-area: ff;
+}
+.item5s {
+   grid-area: mm;
+}

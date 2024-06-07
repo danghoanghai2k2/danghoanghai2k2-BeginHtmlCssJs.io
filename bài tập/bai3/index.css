@@ -1,0 +1,97 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+    font-size: 20px;
+}
+body{
+    background-color: rgb(224 224 224);
+}
+.main-chinh{
+    width: 70%;
+    height: 28rem;
+    background-color:white;
+    /* position: absolute; */
+    margin: 7rem auto;
+}
+.title{
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: cursive;
+    color: rgba(116, 21, 21, 0.904);
+}
+.imgage{
+    width: 97%;
+    height: 21rem;
+    background-color: blue;
+    margin: 0 auto;
+    background-image: url(https://d1hjkbq40fs2x4.cloudfront.net/2017-08-21/files/landscape-photography_1645-t.jpg);
+    background-repeat: no-repeat;
+    background: cover;
+    background-size: cover;
+    position: relative;
+    opacity: 0.8;
+    box-shadow: 5px 5px 6px;
+}
+.vuong{
+    width: 34%;
+    height: 76%;
+    background: rgba(33, 99, 44 ,0.8);
+    position: absolute;
+    top: 2em;
+    left: 1em;
+    
+}
+.vuong2{
+    background-size: cover;
+    width: 25%;
+    height: 90%;
+   background-image: url('z3681467933131_b664ae7ebd5a2456d9da077f4f6836a0\ \(1\).jpg');
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 4rem;
+    left: 3.5em;
+    box-shadow: 3px 4px 3px 0px;
+}
+.vuong3{
+    width: 55%;
+    height: 19em;
+    /* background-color: blue; */
+    position: absolute;
+    top: 25px;
+    left: 20em;
+}
+.icon{
+    font-size: 2rem;
+    color: rgb(57, 107, 8);
+    margin: 10px 5px;
+}
+.vuong3 p{
+    color: rgb(57, 107, 8);
+    font-size: 13px;
+    font-family: cursive;
+}
+.icon2{
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    font-size: 25px;
+    border-radius: 50%;
+    border: 2px dashed rgb(57, 107, 8);
+    text-align: center;
+    line-height: 3rem;
+}
+.flex{
+    display: flex;
+    width: 10em;
+    justify-content: space-around;
+    align-items: center;
+}
+.green{
+    color:rgb(57, 107, 8) ;
+}
+.flex .flex2{
+    width: 6em;
+}

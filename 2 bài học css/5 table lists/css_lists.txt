@@ -1,0 +1,20 @@
+list-style-type : là kiểu của các list
+
+
+disc : mặc định dấu chấm đen (•)
+circle : dấu tròn trống (◦)
+square : hình vuông đặc (■) 
+decimal : số thập phân 
+lower-alpha : chữ cái
+upper-roman :   số la mã
+none : không có
+
+
+list-style-position : là vị trí của các lists
+inside : trong content
+outsdie : ngoài content
+
+list-style-image: url(https://www.freepngimg.com/thumb/star/1-red-star-png-image-thumb.png);
+
+viết tắt list-style:kiểu - vị trí - ảnh;
+list-style:square inside;

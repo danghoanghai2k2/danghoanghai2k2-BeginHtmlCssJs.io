@@ -1,0 +1,60 @@
+/* THUỘC TÍNH tranform KHÔNG ẢNH HƯỞNG VỚI VẬT THỂ KHÁC */
+
+/* scale(numbers) : tăng kích thước lên 
+scaleX() :tăng kích thước lên theo ngang
+scaleY() :tăng kích thước lên theo dọc */
+.div_Box {
+   width: 5rem;
+   height: 5rem;
+   background-color: aqua;
+   transform: scaleX(2) scaleY(2); /* tương tự transform: scale(2,2); */
+}
+/* rotate(số + deg) : xoay  
+   rotate3d(x, y, z, dộ xoay )*/
+
+.div_Box2 {
+   width: 5rem;
+   height: 5rem;
+   background-color: rgb(255, 0, 0);
+   transform: rotate(45deg);
+}
+/* translate(giá trị X, giá trị Y) : căn chỉnh vị trí 
+translateX() : căn chỉnh vị trí ngang
+translateY() : căn chỉnh vị trí dọc */
+
+.div_Box3 {
+   width: 5rem;
+   height: 5rem;
+   background-color: blue;
+   transform: translate(30px, 30px);
+}
+
+/* skew(số + deg);  độ nghiêng chéo 
+skewX() :độ chéo của ngang
+skewY() : độ chéo của dọc */
+
+.div_Box4 {
+   width: 5rem;
+   height: 5rem;
+   background-color: yellow;
+   transform: skewY(50deg);
+}
+/* transform-origin : X , Y ; */
+.div_Box5 {
+   width: 5rem;
+   height: 5rem;
+   background-color: yellow;
+   transform-origin: 50% 0; /*bottom, left, right, top*/
+   animation: identifier 1s linear infinite;
+}
+@keyframes identifier {
+   0% {
+      transform: rotate(0deg);
+   }
+   50% {
+      transform: rotate(180deg);
+   }
+   100% {
+      transform: rotate(360deg);
+   }
+}

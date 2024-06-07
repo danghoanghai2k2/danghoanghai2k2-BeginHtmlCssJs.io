@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Bài học về form</title>
+   </head>
+
+   <body>
+      <!-- các thuộc tính trong form 
+      type : kiểu 
+      name : giá trị 
+      value : dữ liệu
+      id 
+      required : bắt buộc nhập
+      readonly : không được nhập 
+      maxlength="10" :chỉ được phép nhập 10 kí tự
+      checked : dùng trong checkbox, radio
+      disabled : không thể nhập click ...
+      selectd : chọn dùng trong select option
+      min , max : độ dài ngắn dùng number và ranger
+      hidden : ẩn đi 
+      step :  bước nhảy dùng trong number -->
+      <form action="" method="">
+         <table>
+            <tr>
+               <td>
+                  <label for="name">Tên của bạn là</label>
+                  <input
+                     style="outline: none"
+                     type="text"
+                     name="name"
+                     id="name"
+                     value=""
+                     placeholder="điền thông tin vào đây"
+                  />
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <label for="tuoi">Tuổi của bạn</label>
+                  <input
+                     type="number"
+                     name=""
+                     id="date"
+                     placeholder="tuôi của bạn"
+                     min="18"
+                     max="100"
+                     step="5"
+                  />
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <label for="password">Mật khẩu bạn là</label>
+                  <input type="password" name="" id="password" placeholder="mật khẩu bạn" />
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <label for="email">email</label>
+                  <input type="email" name="" id="password" placeholder="email là " />
+               </td>
+            </tr>
+         </table>
+         <div class="">
+            <select name="" id="">
+               <option value="" selected hidden>Chọn Môn Yêu thích</option>
+               <option value="">a</option>
+               <option value="">b</option>
+               <option value="">a</option>
+               <option value="">a</option>
+            </select>
+         </div>
+         <div class="">
+            <select name="" id="">
+               <option value="" hidden>Chọn Đi nào E</option>
+               <optgroup label="Trường Kinh Công">
+                  <option value="">k</option>
+                  <option value="">b</option>
+                  <option value="">c</option>
+                  <option value="">d</option>
+               </optgroup>
+               <optgroup label="Trường Kinh Công">
+                  <option value="">a</option>
+                  <option value="">b</option>
+                  <option value="">c</option>
+                  <option value="">d</option>
+               </optgroup>
+               <optgroup label="Trường Kinh Công">
+                  <option value="">a</option>
+                  <option value="">b</option>
+                  <option value="">c</option>
+                  <option value="">d</option>
+               </optgroup>
+            </select>
+         </div>
+         <div class="">
+            <label for="sexnam">Nam</label>
+            <input type="radio" name="sex" id="sexnam" checked />
+            <label for="sexnu">Nữ</label>
+            <input type="radio" name="sex" id="sexnu" />
+         </div>
+         <div class="">
+            <p>Đáp án</p>
+            <label for="a">A</label>
+            <input type="checkbox" name="sex" id="a" />
+            <label for="b">B</label>
+            <input type="checkbox" name="sex" id="b" />
+            <label for="c">C</label>
+            <input type="checkbox" name="sex" id="c" checked />
+            <label for="d">D</label>
+            <input type="checkbox" name="sex" id="d" />
+         </div>
+         <div>
+            <label for="birth">Ngày sinh</label>
+            <input type="date" name="" id="birth" value="2002-05-07" />
+            <p></p>
+            <label for="birth">Ngày sinh có giờ</label>
+            <input type="datetime-local" name="" id="birth" value="2023-06-16T09:30" />
+            <p></p>
+            <label for="hour">Giờ</label>
+            <input type="time" name="" id="hour" value="09:03" />
+            <p></p>
+            <label for="file">File</label>
+            <input type="file" name="" id="file" />
+            <p></p>
+            <label for="range">Chọn 1 dải giá trị</label>
+            <input type="range" name="" id="range" value="100" max="100" min="0" />
+            <p></p>
+            <label for="color">Chọn 1 màu</label>
+            <input type="color" name="" id="color" value="#f49000" max="100" min="0" />
+            <p></p>
+            <label for="color">Reset</label>
+            <input type="reset" name="" id="color" max="100" min="0" />
+         </div>
+         <br />
+         <textarea
+            style="resize: none; outline: none"
+            wrap="soft"
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="mời nhập vào ý định của bạn "
+         ></textarea>
+         <!-- wrap="soft", wrap="hard" là xuống dòng ki nhập 
+          wrap="soft" là không xuống dòng khi nhập  -->
+         <button type="submit">Sub met</button>
+      </form>
+   </body>
+</html>

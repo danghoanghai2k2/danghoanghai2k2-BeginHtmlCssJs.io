@@ -1,0 +1,34 @@
+/* đặt tên biến toàn cục dùng :root{} */
+:root {
+   --text_color: aqua;
+   --font_size: 50px;
+   --text-transform: uppercase;
+   --text-decorations: underline;
+   /* có thể dùng biến vừa rồi đặt lại biến khác  */
+   --text-color: var(--text_color);
+}
+h1 {
+   /* dùng biến var để sử dụng biến người dùng đặt  */
+   color: var(--text_color);
+   font-size: var(--font_size);
+   text-transform: var(--text-transform);
+   text-decoration: var(--text-decorations);
+}
+h2 {
+   background-color: var(--text-color);
+}
+.block_color h1 {
+   /* biến toàn cục sẽ ưu tiên hơn là biến cục bộ  */
+   --text_color: orange;
+   --font_size: 20px;
+   --text-transform: lowercase;
+   --text-decorations: line-through;
+}
+/* cách làm này nếu biến đặt không có giá trị thì lấy giá trị kia của biến var() */
+ol > li:first-child {
+   --font-style: normal;
+   color: var(--text_color, red);
+   font-size: var(--font_size, 30px);
+   text-decoration: var(--text-decorations);
+   font-style: var(--font-style, italic);
+}

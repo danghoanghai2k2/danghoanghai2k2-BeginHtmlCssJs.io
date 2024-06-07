@@ -1,0 +1,16 @@
+{
+   "git.autorefresh": true,
+   "git.decorations.enabled": true,
+   "editor.fontFamily": "'Fira Code', 'Menlo', monospace",
+   "git.enabled": false,
+   // "editor.defaultFormatter": null,
+   // "editor.wordWrap": "bounded",
+   "editor.wordWrapColumn": 100,
+   "editor.lineHeight": 2,
+   "editor.insertSpaces": true, // Sử dụng dấu cách thay vì dấu tab
+   // "editor.formatOnSave": true,
+   // "editor.tabSize": 2, // Số lượng ký tự dùng để hiển thị một tab
+   "editor.trimAutoWhitespace": true, // Tự động xóa khoảng trắng không cần thiết
+   // "editor.wrappingIndent": "same",
+   "emmet.triggerExpansionOnTab": true
+}

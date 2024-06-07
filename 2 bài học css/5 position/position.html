@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="position.css" />
+      <link rel="stylesheet" href="../../1 bài học html/fontawesome/css/all.css" />
+   </head>
+   <body>
+      <center>
+         <h1>Học về positons trong css</h1>
+      </center>
+      <div class="boxed">
+         <div class="boxed_once"></div>
+         <h3>học về possion static</h3>
+         <p>
+            position: static; là thuộc tinh nằm trong luồng dữ liệu của web và không bị ảnh hưởng
+            khi set các thuộc tính cho chúng (như top, left, right, bottom) hoặc các giá trị
+            z-index.
+         </p>
+      </div>
+      <hr />
+      <div class="boxed">
+         <div class="boxed_once" id="ps_realtive">
+            khối sẽ di chuyển trong luồng đó được phân chia
+         </div>
+         <h3>học về possion relative</h3>
+         <p>
+            position: relative; Phần tử vẫn chiếm diện tích của nó trong luồng, nhưng bạn có thể di
+            chuyển nó từ vị trí gốc của nó bằng cách sử dụng các thuộc tính top, left, right, bottom
+            ,z-index.
+         </p>
+         <p>
+            Khi đặt các giá trị top, left, right, bottom, phần tử sẽ di chuyển từ vị trí gốc của nó
+            dựa trên giá trị bạn cung cấp. Điều này làm thay đổi vị trí hiển thị của phần tử, nhưng
+            vẫn chiếm diện tích của nó trong luồng.
+         </p>
+      </div>
+      <hr />
+      <div class="boxed">
+         <div class="boxed_once" id="ps_absolute">
+            khối này sẽ không tính chiếm diện tích của trình duyệt
+         </div>
+         <h3>học về possion absolute</h3>
+         <p>
+            possion absolute là thuộc tính mà nó sẽ ăn theo relative chứa lấy nó KHÔNG CÓ CHA
+            realative thì ăn theo thẻ html root, KHÔNG tính theo margin và padding
+         </p>
+         <p>
+            position: absolute; Phần tử KHÔNG chiếm diện tích của nó trong luồng, bạn có thể di
+            chuyển bằng thuộc tính top, left, right, bottom ,z-index.
+         </p>
+      </div>
+      <hr />
+      <div class="boxed_once" id="ps_fixxed">
+         <p>đây là position fixed</p>
+         <br />
+         <p>
+            position: fixed; Phần tử KHÔNG chiếm diện tích của nó trong luồng, bạn có thể di chuyển
+            bằng thuộc tính top, left, right, bottom ,z-index.
+         </p>
+         <br />
+         <p>thuộc tính này sẽ gắn với root html để làm menu trang</p>
+      </div>
+      <hr />
+      <div class="boxed">
+         <div class="boxed_once" id="ps_sticky"></div>
+         <p>position: sticky</p>
+         <p>
+            position: sticky là thuộc tính bào gồm cả position realative và fixed.Ban đầu: Phần tử
+            được xử lý như là position: relative và nằm trong văn bản bình thường theo luồng của
+            trang web. Khi người dùng cuộn trang: Khi phần tử đạt tới một ngưỡng xác định (do bạn
+            định nghĩa), nó sẽ trở thành "sticky" và giữ nguyên vị trí ở đó khi bạn cuộn trang
+            xuống.
+         </p>
+      </div>
+   </body>
+</html>

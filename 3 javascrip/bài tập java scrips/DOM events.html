@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+</head>
+<style>
+    .red-color{
+        color: red;
+    }
+</style>
+<body>
+    <h1 onclick="console.log('bạn đã click vào đây rồi',this.style = 'color:red;')">Click vào đây đi nào dùng Attibutes Events </h1>
+    <!-- this trong đây là để in ra elementsNode -->
+    <h2 class="h2">H2.1</h2>
+    <h2 class="h2">H2.2</h2>
+    <h2 class="h2">H2.3</h2>
+    <h2 class="h2">H2.4</h2>
+    <div>
+        lấy ra value
+        <input type="text" class="input-text">
+        lấy ra value
+        <input type="checkbox" name="" id="" checked>
+        <select name="" id="" class="select-one">
+            <option hidden>Lựa Chọn</option>
+            <option value="js">JavaScripst</option>
+            <option value="php">PHP</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+        </select>
+    </div>
+</body>
+<script src="../học java scrisps/23 Dom events.js"></script>
+</html>

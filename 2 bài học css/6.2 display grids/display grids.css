@@ -1,0 +1,115 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.boxed{
+    background-color: yellow;
+    border: 1px solid black;
+    /* height:50px; */
+}
+.boxed img{
+    width: 100%;
+    height: 100%;
+}
+.boxed_grids{
+    display: grid;/* mặc định là 1 hàng và 1 cột  */   
+    grid-template-columns: repeat(3,1fr);
+    /* -->khởi tạo cột trong grids 
+    grid-template-columns: số cột1 số cột2 số cột3 số cộtn.....
+    giá trị cột có thể truyền px, %, rem, em ,auto HAY DÙNG TRONG grids fr */
+
+    grid-template-rows: 1fr 1.5fr 1fr;
+    /* --> khởi tạo hàng cũng tương tự cột  */
+
+    grid-gap:20px;
+    /* có thể truyền 2 giá trị rows và column
+    tạo margin giữa các khối : 
+    - viết tắt của  grid-column-gap: 20px;
+                    grid-row-gap: 20px; */
+}
+.boxed_gridtwo{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 30% 10% 30%;
+    grid-gap: 20px;
+    padding: 20px;
+}
+.boxed_one img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.boxed_one:nth-child(1){
+    /* đây là dạng set đầy đủ */
+    grid-column-start:1;
+    grid-column-end: 3;
+    grid-row-start:1 ;
+    grid-row-end:2 ;
+}
+.boxed_one:nth-child(2){
+    /* đây là cách viết tắt  */
+    grid-column:3/4;
+    grid-row:1/3;
+}
+.boxed_one:nth-child(3){
+    /* ta cũng có thể dùng span để chia xem khối đó chiếm mấy cột hàng */
+    grid-column:4/span 1;
+    grid-row:1/3;
+}
+.boxed_one:nth-child(4){
+    grid-column:1/2;
+    grid-row:2/span 2;
+}
+.boxed_one:nth-child(5){
+    grid-column:2/3;
+    grid-row:2/4;
+}
+.boxed_one:nth-child(6){
+    grid-column:3/5;
+    grid-row:3/4;
+    
+} 
+#grids_area{
+    grid-template-areas: 
+    "h1 h2 h3 h3"
+    "h1 h2 h5 h4"
+    "h6 h6 h5 h4"
+    ;
+}
+#boxed_one:nth-child(1){
+    grid-area: h1;
+}
+#boxed_one:nth-child(2){
+    grid-area: h2;
+}
+#boxed_one:nth-child(3){
+    grid-area: h3;
+}
+#boxed_one:nth-child(4){
+    grid-area: h4;
+}
+#boxed_one:nth-child(5){
+    grid-area: h5;
+}
+#boxed_one:nth-child(6){
+    grid-area: h6;
+}
+.div_box_grids{
+    display: grid;
+    /* thuộc tính auto-fit là phủ cho đủ cho các cột
+    thuộc tính auto-fill là phủ đầy các khoảng trống sau khi chia cột */
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-gap:30px;
+    padding: 30px;
+}
+.div_box_one{
+    height: 300px;
+    border-radius: 30px;
+}
+.div_box_one img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}

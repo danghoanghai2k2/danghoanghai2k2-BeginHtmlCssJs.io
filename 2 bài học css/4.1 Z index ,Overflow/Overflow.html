@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Overflow</title>
+      <link rel="stylesheet" href="Overflow.css" />
+   </head>
+   <body>
+      <h1>overflow-x : là tác động đến trái, phải của content</h1>
+      <h1>overflow-y : là tác động đến trên, dưới của content</h1>
+      <p>
+         Lưu ý: Thuộc overflow tính chỉ hoạt động đối với các phần tử khối có chiều cao được chỉ
+         định.
+      </p>
+      <h1>overflow : visible</h1>
+      <p>thuộc tính này sẽ tự động tràn khi khối quá nhỏ và content quá lớn</p>
+      <div class="overflow_vs">
+         <p>overflow : visible</p>
+         <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, corrupti accusamus
+            explicabo et vero quod ad, commodi, eius sed culpa quis repudiandae perspiciatis harum
+            doloribus nisi? Sequi porro nobis facere.
+         </p>
+      </div>
+      <h1>overflow : hidden</h1>
+      <div class="overflow_vs overflow_hidden">
+         <p>overflow : hidden</p>
+         <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab odio possimus ut. Tempore
+            sint odio blanditiis doloribus modi non asperiores culpa cum, excepturi consectetur
+            nulla rerum optio ratione, velit sequi?
+         </p>
+      </div>
+      <h1>overflow : scroll</h1>
+      <div class="overflow_vs overflow_scroll">
+         <p>overflow : scroll</p>
+         <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab odio possimus ut. Tempore
+            sint odio blanditiis doloribus modi non asperiores culpa cum, excepturi consectetur
+            nulla rerum optio ratione, velit sequi?
+         </p>
+      </div>
+      <h1>overflow : auto</h1>
+      <div class="overflow_vs overflow_auto">
+         <p>overflow : auto</p>
+         <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab odio possimus ut. Tempore
+            sint odio blanditiis doloribus modi non asperiores culpa cum, excepturi consectetur
+            nulla rerum optio ratione, velit sequi?
+         </p>
+      </div>
+   </body>
+</html>

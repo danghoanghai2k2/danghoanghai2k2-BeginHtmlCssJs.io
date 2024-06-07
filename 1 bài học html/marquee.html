@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marquee</title>
+</head>
+
+<body>
+  <marquee behavior="alternate">
+    Đây là một ví dụ về html marquee
+  </marquee>
+  <marquee scrollamount="100" bgcolor="red" width="100px" height="100px" behavior="" direction="up">điều hướng của chữ
+  </marquee>
+  <p>behavior scroll quận , slide 1 lần ,alternate lặp lại</p>
+  <p>bgcolor màu nền</p>
+  <p>direction up, down, left, right </p>
+  <p>height, width</p>
+  <p>scrollamount tốc độ chạy</p>
+  <p>loop số lần lặp INFINITE vô hạn</p>
+  <p>hspace : không giạn ngang chữ chạy vspace : không gian dọc chữ chạy</p>
+  <br><br><br>
+  <div class="marquee">
+    <p behavior="scroll" direction="left"> đây là chữ chạy này </p>
+  </div>
+  <style>
+    .marquee {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .marquee p {
+      animation: marquee 10s linear infinite;
+      white-space: nowrap;
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(100%);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+</body>
+<script src="marquee.js"></script>
+
+</html>
